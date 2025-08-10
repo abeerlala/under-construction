@@ -34,6 +34,42 @@ body {
     background-color: var(--1);
 }
 
+.loader {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loaderInner {
+    height: 60px;
+    width: 60px;
+    background-color: var(--4);
+    border-radius: 50%;
+    border: 7px solid var(--6);
+    border-top-color: var(--3);
+    animation: rotation 1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Side Icons */
 
 #toTop,
@@ -856,7 +892,7 @@ a.viewAll:hover {
 /* Inquiry Section */
 
 #inquiry {
-    background-image: url(Images/premium_photo-1661331603643-e5d639f4e10a.avif);
+    background-image: url(Images/contactBg.webp);
     height: fit-content;
     width: 100%;
     background-attachment: fixed;

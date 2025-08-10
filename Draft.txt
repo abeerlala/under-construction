@@ -1,0 +1,26 @@
+1. Home Page
+   • Brief company introduction
+   • Key categories/services overview
+   • Featured products carousel
+   • Quick enquiry form
+   • WhatsApp & call buttons
+
+2. Products Page
+   • Machines Tab
+   • Raw Materials Tab
+   • Inks Tab
+   • Spare Parts Tab
+
+3. Services Page
+    > Technical Support
+	• Some Detail About Technical Support That The Company Provides To Buyers
+    > Training 
+	• Videos About Basic Training Of Machines
+
+4. Application Page
+   • mix object printing photo and video
+
+5. Contact Us Page
+   • Branch Locations With Maps
+   • Contact Form
+   • Social Links
