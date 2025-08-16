@@ -226,8 +226,19 @@
         cursor: pointer;
     }
 
+    .contactTop {
+        flex-direction: column-reverse;
+    }
+
     .contactTopInner1 {
-        display: none;
+        height: 50%;
+        width: 100%;
+        margin: 20px 10px 0px 10px;
+        padding: 0 20px;
+    }
+
+    .contactTopInner1 img {
+        object-fit: cover;
     }
 }
 

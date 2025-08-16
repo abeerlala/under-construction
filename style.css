@@ -31,6 +31,7 @@
 
 body {
     background-color: var(--2);
+    min-width: 320px;
 }
 
 ::-webkit-scrollbar {
