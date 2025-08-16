@@ -738,7 +738,7 @@ footer a {
 
 .missionInner1 p,
 .visionInner1 p {
-    text-align: justify;
+    text-align: left;
     font-size: 1rem;
     line-height: 20px;
 }
