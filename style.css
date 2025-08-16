@@ -2,6 +2,14 @@
     font-family: 'Gorga';
     src: url(Fonts/GorgaGrotesque-Light.otf);
 }
+@font-face {
+    font-family: 'Gorga Bold';
+    src: url(Fonts/GorgaGrotesque-Bold.ttf);
+}
+@font-face {
+    font-family: 'Gorga Regular';
+    src: url(Fonts/GorgaGrotesque-Regular.ttf);
+}
 
 * {
     margin: 0;
@@ -1220,7 +1228,7 @@ optgroup {
 
 .product-title span {
     color: var(--3);
-    -webkit-text-stroke: 1.1px var(--3);
+    font-family: "Gorga Regular";
 }
 
 table {
@@ -1241,172 +1249,66 @@ table td:first-child {
     width: 40%;
 }
 
-/* Contact Page */
+/* Contact Top */
 
-#contactContainer {
-    width: 90%;
-    max-width: 1000px;
-    background-color: var(--1);
-    margin: 70px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contactInner1 {
-    height: 100%;
-    width: 55%;
-    background-color: var(--6);
-    padding: 20px;
-}
-
-.contactInner1 h1 {
-    margin: 20px 0 0 30px;
-    font-size: 1.9rem;
-}
-
-.contactInner1 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contactTop {
     width: 100%;
-    margin-top: 10px;
-    padding: 20px;
-}
-
-.contactInner1 form label {
-    align-self: flex-start;
-    margin-left: 7px;
-    margin-top: 7px;
-    margin-bottom: 0;
-    display: none;
-}
-
-.contactInner1 form input {
-    height: 40px;
-    margin: 5px;
-    padding: 5px 0 0 5px;
-    border: none;
-    outline: none;
-    width: 47%;
-    font-size: .9rem;
-    border: 2px solid var(--5);
-    background-color: var(--4);
-}
-
-.formgroup {
-    width: 100%;
+    height: 480px;
+    background-color: var(--1);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
 }
 
-.contactInner1 form textarea {
-    width: 96%;
-    min-height: 150px;
-    max-height: 300px;
-    padding: 5px;
-    margin: 5px;
-    border: none;
-    outline: none;
-    font-size: .9rem;
-    resize: vertical;
-    border: 2px solid var(--5);
-    background-color: var(--4);
-}
-
-.contactInner1 form input::placeholder,
-.contactInner1 form textarea::placeholder {
-    color: #333;
-}
-
-.contactInner1 form button {
-    background-color: var(--1);
-    color: var(--4);
-    border: none;
-    outline: none;
-    margin-top: 15px;
-    padding: 10px 10px 5px 10px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: background-color .3s ease;
-    width: 96%;
-    height: 40px;
-}
-
-.contactInner1 form button:hover {
-    background-color: var(--5);
-}
-
-.contactInner2 {
-    height: 100%;
-    width: 45%;
-    background-color: var(--1);
-    padding: 20px;
-}
-
-.contactInner2 h1 {
-    font-size: 1.9rem;
-    margin: 20px 0 0 10px;
-}
-
-.contactInner2 .contactInfo {
+.contactTopInner1 {
+    height: 95%;
+    width: 40%;
     margin-left: 30px;
-    height: 340px;
-    margin-top: 40px;
-    list-style: none;
 }
 
-.contactInner2 .contactInfo li {
-    margin-bottom: 15px;
+.contactTopInner1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
-.contactInner2 .contactInfo li .details {
-    color: var(--5);
-    text-decoration: none;
+.contactTopInner2 {
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
-.contactInner2 .contactInfo li .details:hover {
-    text-decoration: underline;
+.contactTopInner2 h1 {
+    font-family: "Gorga Regular";
+    font-size: 2.1rem;
+    color: var(--4);
 }
 
-.contactInner2 .contactInfo li.email {
-    list-style: none;
+.contactTopInner2 h3 {
+    font-size: 1.4rem;
+    margin: 15px 0;
     display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.contactInner2 .contactInfo li.email .details {
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    white-space: normal;
-}
-
-.contactIcons {
-    gap: 10px;
-    display: flex;
-    justify-content: flex-start;
+    justify-content: left;
     align-items: center;
 }
 
-.contactInner2 .contactIcons a {
-    font-size: 1.7rem;
-    color: var(--5);
+.contactTopInner2 h3 a {
+    color: var(--4);
+    background-color: var(--3);
+    font-size: 1.1rem;
+    margin-left: 10px;
+    padding: 7px 10px;
     text-decoration: none;
-    transition: transform .3s ease;
+    transition: color .3s ease, background-color .3s ease;
 }
 
-.contactInner2 .contactIcons a:hover {
-    transform: translateY(-5px);
+.contactTopInner2 h3 a:hover {
+    background-color: var(--4);
+    color: var(--5);
 }
 
-.contactInner2 .contactInfo .fa-brands:first-child {
-    margin-left: 0;
+.contactTopInner2 p {
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 /* Branches Section */
@@ -1418,7 +1320,6 @@ table td:first-child {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
 }
 
 #branches h2 {
@@ -1430,40 +1331,138 @@ table td:first-child {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 120px;
-    gap: 70px;
+    gap: 50px;
 }
 
 .branchCard {
-    height: 180px;
-    width: 270px;
-    border: 5px solid var(--1);
+    height: 300px;
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.branchesTitle {
+    margin: 50px 0 50px 0;
+    text-align: center;
+    font-size: 1.9rem; 
+}
+
+.branchCard::after {
+    content: " ";
+    background-color: var(--1);
+    width: 15px;
+    height: 235px;
+    position: absolute;
+    top: 0;
+    right: -15px;
+}
+
+.branchCard::before {
+    content: " ";
+    background-color: var(--1);
+    width: 15px;
+    height: 235px;
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.branchCardInner1 iframe {
+    border: none;
+}
+
+.branchCardInner2 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
-    text-align: center;
-    padding: 5px;
+    height: 50%;
 }
 
 .branchCard h3 {
-    margin-top: 60px;
+    font-size: 1.3rem;
+    color: var(--3);
 }
 
 .branchCard p {
-    font-size: .9rem;
+    font-size: 1rem;
     margin-top: 5px;
 }
 
 .branchCard p a {
     color: var(--5);
     text-decoration: none;
+    font-size: 1.1rem;
+    transition: color .3s ease;
 }
 
-.branchCard iframe {
+.branchCard p a:hover {
+    color: var(--3);
+}
+
+/* Head Office / Emails */
+
+.head-officeContainer {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-office {
+    border: 5px solid var(--1);
+    background-color: var(--1);
+    padding: 20px;
+    margin: 30px auto;
+    text-align: left;
+    width: 90%;
+    max-width: 900px;
+    margin: 0px 10px 70px 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.head-office h2 {
+    color: var(--4);
+    font-size: 20px;
+}
+
+.head-office p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.divider {
+    display: none;
+    height: 5px;
+    width: 100%;
     position: absolute;
-    top: -60px;
-    border: 5px solid var(--6);
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: var(--2);
+    border: none;
+}
+
+.head-office a {
+    color: var(--5);
+    text-decoration: none;
+}
+
+.head-office a:hover {
+    text-decoration: underline;
+}
+
+.emails,
+.office {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
