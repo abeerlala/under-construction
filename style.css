@@ -817,6 +817,7 @@ footer a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 270px;
     height: 250px;
+    box-shadow: 0px 0px 13px #00000040 inset;
 }
 
 .serviceCard:hover {
@@ -905,7 +906,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--5);
+    box-shadow: 0px 0px 13px #00000040 inset;
 }
 
 a.viewAll {
