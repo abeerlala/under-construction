@@ -30,7 +30,7 @@ fetch("/Components/nav.html")
                 link.classList.add("activeNavLink")
             } else if (
                 pageName.includes("services") ||
-                pageName.includes("techSupport") ||
+                pageName.includes("techsupport") ||
                 pageName.includes("training") ||
                 pageName.includes("parts")
             ) {
@@ -61,7 +61,7 @@ fetch("/Components/nav.html")
                 pageName.includes("sublimation") ||
                 pageName.includes("laser") ||
                 pageName.includes("plotter") ||
-                pageName.includes("heatTransfer") ||
+                pageName.includes("heattransfer") ||
                 pageName.includes("inks") ||
                 pageName.includes("material")
             ) {
