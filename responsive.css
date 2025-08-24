@@ -22,6 +22,10 @@
     .navList {
         gap: 30px;
     }
+
+    .mainTextInner h1 {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -239,6 +243,26 @@
 
     .contactTopInner1 img {
         object-fit: cover;
+    }
+
+    .videosMain {
+        height: calc(100vh - 70px);
+        flex-direction: column;
+    }
+    
+    .videosMain.even {
+        height: calc(100vh - 70px);
+        flex-direction: column;
+    }
+
+    .mainText {
+        width: 100%;
+        padding: 20px;
+        height: 200px;
+    }
+
+    .media {
+        width: 100%;
     }
 }
 

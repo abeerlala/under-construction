@@ -1,3 +1,7 @@
+window.addEventListener("load", ()=>{
+    document.querySelector(".loader").style.display = "none";
+})
+
 AOS.init();
 
 // ToTop Logic
@@ -204,3 +208,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 });
+
+const videos = document.querySelectorAll(".videoInner");
+const vidPlayer = document.querySelector("#lightbox");
+const videoplay = document.querySelector("#videoSelf");
+
+videos.forEach(video => {
+    const btn = video.querySelector(".playPauseBtn");
+    const src = video.querySelector("img").getAttribute("data-video-src");
+    btn.addEventListener("click", () => {
+        vidPlayer.classList.add("activevideo");
+        videoplay.setAttribute("src", `Videos/${src}`)
+    })
+})
+
+const closeLightbox = () => {
+    vidPlayer.classList.remove("activevideo")
+    videoplay.src = "";
+}

@@ -9,11 +9,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
+    <div class="loader">
+        <div class="loaderInner">
+            <div class="loaderInner2"></div>
+        </div>
+    </div>
 
     <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
     <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
@@ -21,6 +28,157 @@
     <nav id="nav"></nav>
     <div class="search2" id="searchcontainer"></div>
 
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content" id="lightbox-content">
+            <video autoplay controls id="videoSelf" src=""></video>
+        </div>
+    </div>
+
+    <div class="videosMain">
+        <div class="mainText">
+            <div class="mainTextInner">
+                <h1>Troubleshooting Videos for UV <small>(DTF)</small> Printers</h1>
+                <button class="goToProduct">Go To Products</button>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="video">
+                <div class="videoInner">
+                    <img src="Videos/Thumbnails/Video-1-Thumbnail.png" data-video-src="Nature-video.mp4"
+                        alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="videosMain even">
+        <div class="mainText">
+            <div class="mainTextInner">
+                <h1>Troubleshooting Videos for UV <small>(DTF)</small> Printers</h1>
+                <button class="goToProduct">Go To Products</button>
+            </div>
+        </div>
+
+        <div class="media">
+            <div class="video">
+                <div class="videoInner">
+                    <img src="Videos/Thumbnails/Video-1-Thumbnail.png" data-video-src="Nature-video.mp4"
+                        alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" data-video-src="Nature-video.mp4"
+                        alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+
+            <div class="video">
+                <div class="videoInner">
+                    <img src="https://placehold.co/350x196?text=Video+Thumbnail" alt="Thumbnail">
+                    <button class="playPauseBtn"><i class="fa-solid fa-play btnIcon"></i></button>
+                </div>
+                <div class="title">
+                    <h3>This is a video for UV <small>(DTF)</small> printer.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="loader.js"></script>
