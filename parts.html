@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- DEPENDENCIES -->
+    <link rel="stylesheet" href="Dependencies/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/brands.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/solid.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/regular.min.css" />
+
+    <link rel="stylesheet" href="Dependencies/css/aos.css" />
 </head>
 
 <body>
@@ -40,9 +43,44 @@
         </div>
     </div>
 
-    <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
-    <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
-    <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<div class="sideIcons">
+        <a id="toTop" aria-label="Go To Top"><i style="font-size: 1.2rem;" class="fa-solid fa-arrow-up"></i></a>
+
+        <a aria-label="Call Us" href="tel:+971504217267"><i style="font-size: 1.2rem;"
+                class="fa-solid fa-phone"></i></a>
+
+        <a aria-label="Expand Social Icons" title="Expand Social Icons" id="openSocials" class="openSocials"
+            onclick="openSocialsFn()"><i id="openSocialsIcon" class="fa-solid fa-angle-up"></i></a>
+
+        <a style="background-color: #25d366;" aria-label="Talk To Us On Whatsapp" href="https://wa.me/+971504217267"
+            target="_blank"><i style="font-size: 1.4rem;" class="fa-brands fa-whatsapp"></i></a>
+
+        <div class="sideIconsInner">
+            <a aria-label="Visit Inkjet Global Facebook Page" href="https://www.facebook.com/share/1FHeWxCKLt/"
+                target="_blank" style="background-color: #4267B2;">
+                <i style="font-size: 1.4rem;" class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Instagram"
+                href="https://www.instagram.com/inkjetglobal?igsh=enB1NmFqcGo0NjFy" target="_blank"
+                style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                <i style="font-size: 1.5rem;" class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Tiktok"
+                href="https://www.tiktok.com/@inkjet.global.by?_t=ZS-8zMi0zAPcY8&_r=1" target="_blank"
+                style="background-color: #000000;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Linked In"
+                href="https://www.linkedin.com/in/inkjet-global-by-reliance-b19211382" target="_blank"
+                style="background-color: #0077B5;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+
     <nav id="nav"></nav>
     <div class="search2" id="searchcontainer"></div>
 
@@ -56,8 +94,1364 @@
     </section>
 
     <div class="product-container">
+        <!-- PRINTHEADS -->
+
+        <!-- Card 124: Print Head Epson i3200 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/phei3200.webp"
+                        alt="Print Head Epson i3200" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Print Head Epson i3200</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 124: Print Head Epson XP600 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/phexp600.webp"
+                        alt="Print Head Epson XP600" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Print Head Epson XP600</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 135: Print Head Epson TX800 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ephtx800.png"
+                        alt="Print Head Epson TX800" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Print Head Epson TX800</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 135: Print Head Epson DX6 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ephdx5.jpg"
+                        alt="Print Head Epson DX6" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Print Head Epson DX6</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- BOARDS -->
+
+        <!-- Card 81: BYHX dx5 main board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/byhxdx5mb.webp"
+                        alt="BYHX dx5 main board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">BYHX dx5 main board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 86: DX5 Main Board for Epson R1900 Printer -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/dx5mbfer1900p.webp"
+                        alt="DX5 Main Board for Epson R1900 Printer" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">DX5 Main Board for Epson R1900 Printer</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 125: Hanson Main Board GLB v2.75.11 (i3200x2) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hmbglb.webp"
+                        alt="Hanson Main Board GLB v2.75.11 (i3200x2)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Hanson Main Board GLB v2.75.11 (i3200x2)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 127: XP600 Head Main Board (Network Controller HEB-C-01) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600hmbnc.webp"
+                        alt="XP600 Head Main Board (Network Controller HEB-C-01)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 Head Main Board (Network Controller HEB-C-01)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 71(E6014 Epson i3200 Double Carriage Board) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200dcb.webp"
+                        alt="Epson i3200 Double Carriage Board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson i3200 Double Carriage Board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 72(E6014-1 Epson i3200 Carriage Board (4 head)) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200dcb4h.webp"
+                        alt="Epson i3200 Carriage Board (4 head)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson i3200 Carriage Board (4 head)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 80: BYHX dx5 head board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/byhxdx5hb.webp"
+                        alt="BYHX dx5 head board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">BYHX dx5 head board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 87: DX5 single head board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5shb.webp"
+                        alt="DX5 single head board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">DX5 single head board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 85: XP600 single head board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600shb.webp"
+                        alt="XP600 single head board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 single head board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 90: DX5 printhead board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5phb.webp"
+                        alt="DX5 printhead board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">DX5 printhead board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 89: XP600 hoson set board for double head -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600hsbfdh.webp"
+                        alt="XP600 hoson set board for double head" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 hoson set board for double head</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 82: Xuli printhead control board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xphcb.webp"
+                        alt="Xuli printhead control board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Xuli printhead control board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 94: Konica 512 UMC board 1.4i -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/k512umcb.webp"
+                        alt="Konica 512 UMC board 1.4i" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Konica 512 UMC board 1.4i</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 95: Transfer card from 5113/4720 head to i3200 hanson board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/tcfhti3200hb.webp"
+                        alt="Transfer card from 5113/4720 head to i3200 hanson board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Transfer card from 5113/4720 head to i3200 hanson board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 96: XP600 printhead transfer board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600phtb.webp"
+                        alt="XP600 printhead transfer board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 printhead transfer board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 73(E6015 Epson i3200 Board (Single head)) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200bsh.webp"
+                        alt="Epson i3200 Board (Single head)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson i3200 Board (Single head)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 76(E6016-1 Epson i3200 Connector Board) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200cb.webp"
+                        alt="Epson i3200 Connector Board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson i3200 Connector Board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 83: XP600 Double Head Hanson Board -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600dhhb.webp"
+                        alt="XP600 Double Head Hanson Board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 Double Head Hanson Board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 128: Hoson XP600 Cable Board Double Head Adapter Board For Epson -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/hxp600cbdhabfe.webp"
+                        alt="Hoson XP600 Cable Board Double Head Adapter Board For Epson" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Hoson XP600 Cable Board Double Head Adapter Board For Epson</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 126: Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF board) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hhbhebeps.webp"
+                        alt="Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF board)" />
+                </div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF
+                    board)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 75(E3225 XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600shb.webp"
+                        alt="XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 78(E3278-7 I3200E1 Single Head Board Full Kit) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/i3200e1shbfk.webp"
+                        alt="I3200E1 Single Head Board Full Kit" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">I3200E1 Single Head Board Full Kit</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 79(E3278-8 I3200E1 Double Head Board Full Kit) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/i3200dhbfk.webp"
+                        alt="I3200E1 Double Head Board Full Kit" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">I3200E1 Double Head Board Full Kit</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 93: Epson i3200 Single Head UV Full Board Kit -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/ei3200shuvfbk.webp"
+                        alt="Epson i3200 Single Head UV Full Board Kit" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson i3200 Single Head UV Full Board Kit</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 74(E3362 KM1024i 8 Heads Kit Board) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/km1024i8hkb.webp"
+                        alt="KM1024i 8 Heads Kit Board" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">KM1024i 8 Heads Kit Board</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 129: 4720 i3200 Adapter Convert Card Honson i3200 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4720i3200.webp"
+                        alt="4720 i3200 Adapter Convert Card Honson i3200" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">4720 i3200 Adapter Convert Card Honson i3200</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 84: XP600 double head -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600dh.webp"
+                        alt="XP600 double head" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">XP600 double head</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 77(E1259 Epson XP600 Display Kit Sanyang Version) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/wxp600dksv.webp"
+                        alt="Epson XP600 Display Kit Sanyang Version" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson XP600 Display Kit (Sanyang Version)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- CAP TOPS -->
+
+        <!-- Card 105: E3192-1 XP600 Cap Top 2 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3192-1xp600ct2h.webp"
+                        alt="E3192-1 XP600 Cap Top 2 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3192-1 XP600 Cap Top 2 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 106: E3310-2 Dx5 Cap Top Side With 2 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3310-2dx5ctsw2h.webp"
+                        alt="E3310-2 Dx5 Cap Top Side With 2 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3310-2 Dx5 Cap Top Side With 2 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 107: E3310-3 Dx5 Cap Top 2 Holes In The Middle -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3310-3dx5ct2hitm.webp"
+                        alt="E3310-3 Dx5 Cap Hole 2 Holes In The Middle" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3310-3 Dx5 Cap Hole 2 Holes In The Middle</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 108: E3326-1 Horizontal Shape Cap Top 2 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3326-1hsct2h.webp"
+                        alt="E3326-1 Horizontal Shape Cap Top 2 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3326-1 Horizontal Shape Cap Top 2 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 109: E3326-2 Horizontal Shape Cap Top Side With Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3326-2hsctswh.webp"
+                        alt="E3326-2 Horizontal Shape Cap Top Side With Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3326-2 Horizontal Shape Cap Top Side With Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 110: E3333-2 TX800 Black Cap Top 3 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3333-2tx800bct3h.webp"
+                        alt="E3333-2 TX800 Black Cap Top 3 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3333-2 TX800 Black Cap Top 3 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 111: E3334-1 TX800 Black Cap Top 3 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3334-1tx800bct3h.webp"
+                        alt="E3334-1 TX800 Black Cap Top 3 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3334-1 TX800 Black Cap Top 3 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 112: E3335 TX800 XP600 Cap Top 3 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/tx800tx600ct3h.webp"
+                        alt="E3335 TX800 XP600 Cap Top 3 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3335 TX800 XP600 Cap Top 3 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 113: E3336-1 Black Net Cap Top 2 Holes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image"
+                        src="Images/Products/Material/Parts/e3336-1bnct2h.webp"
+                        alt="E3336-1 Black Net Cap Top 2 Holes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3336-1 Black Net Cap Top 2 Holes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 114: E3391 Dx5 Dx7 My-Jet Cap Top -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3391mjct.webp"
+                        alt="E3391 Dx5 Dx7 My-Jet Cap Top" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E3391 Dx5 Dx7 My-Jet Cap Top</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 88: DX5 to DX7 Convertor -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5todx7c.webp"
+                        alt="DX5 to DX7 Convertor" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">DX5 to DX7 Convertor</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- ENCODER READERS/SENSORS -->
+
+        <!-- Card 33: H9730 180dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9730180.webp"
+                        alt="H9730 180dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9730 180dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 34: H9720 150dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9720150.webp"
+                        alt="H9720 150dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9720 150dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 35: H9780 360dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9780360.webp"
+                        alt="H9780 360dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9780 360dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 36: H9740 360dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9740360.webp"
+                        alt="H9740 360dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9740 360dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 37: H9740 300dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9740300.webp"
+                        alt="H9740 300dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9740 300dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 38: Encoder sensor for FTL printer -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/esfftlp.webp"
+                        alt="Encoder sensor for FTL printer" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Encoder sensor for FTL printer</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 39: H9700 200dpi encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9700200.webp"
+                        alt="H9700 200dpi encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9700 200dpi encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 40: H9700-H1116 encoder reader -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9700h1116.webp"
+                        alt="H9700-H1116 encoder reader" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9700-H1116 encoder reader</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 41: Lcotec Encoder Sensor -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/les.webp"
+                        alt="Lcotec Encoder Sensor" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Lcotec Encoder Sensor</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 42: Wit-color 860 Encoder Sensor -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witc850es.webp"
+                        alt="Wit-color 860 Encoder Sensor" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Wit-color 860 Encoder Sensor</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 44: Encoder Strip Holder (with-iron) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/eshwi.webp"
+                        alt="Encoder Strip Holder (with-iron)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Encoder Strip Holder (with-iron)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 45: Wit-color 9200 Encoder Sensor (original) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witceso.webp"
+                        alt="Wit-color 9200 Encoder Sensor (original)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Wit-color 9200 Encoder Sensor (original)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 46: Encoder Strip Holder -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/esh.webp"
+                        alt="Encoder Strip Holder" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Encoder Strip Holder</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 47: H9720 encoder sensor -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9720es.webp"
+                        alt="H9720 encoder sensor" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9720 encoder sensor</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 48: H9730 encoder sensor -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9730es.webp"
+                        alt="H9730 encoder sensor" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">H9730 encoder sensor</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 68: Assorted Design Encoder Strips -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ades1.webp"
+                        alt="Assorted Design Encoder Strips" /></div>
+                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ades2.webp"
+                        alt="Assorted Design Encoder Strips" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted Design Encoder Strips</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 133: Sensor Fita Encoder -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sfe.webp"
+                        alt="Sensor Fita Encoder" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Sensor Fita Encoder</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- CABLES -->
+
+        <!-- Card 54: FC-FC Single core Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scfow.webp"
+                        alt="FC-FC Single core Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">FC-FC Single core Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 55: FC-FC Double core Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dcfow.webp"
+                        alt="FC-FC Double core Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">FC-FC Double core Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 56: High Density Cable / Optical Fibre -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scdcdfoc.webp"
+                        alt="High Density Cable / Optical Fibre" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">High Density Cable / Optical Fibre</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 57: SC-SC Single core Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scscfow.webp"
+                        alt="SC-SC Single core Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">SC-SC Single core Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 58: SC-SC Double core duplex Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scdcdfoc.webp"
+                        alt="SC-SC Double core duplex Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">SC-SC Double core duplex Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 59: SC-FC Single core Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scfcscfoc.webp"
+                        alt="SC-FC Single core Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">SC-FC Single core Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 60: ACF203726P 7M High density cable (Double head) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdcdh.webp"
+                        alt="ACF203726P 7M High density cable (Double head)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ACF203726P 7M High density cable (Double head)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 61: ACF 1049 High density cable double head 14P 7M -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdcdh.webp"
+                        alt="ACF 1049 High density cable double head 14P 7M" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ACF 1049 High density cable double head 14P 7M</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 62: E10206 Purple High density cable 14P 4M/6M/9M -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdc14p.webp"
+                        alt="E10206 Purple High density cable 14P 4M/6M/9M" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">E10206 Purple High density cable 14P 4M/6M/9M</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 63: EF2063 15P Flora High density cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/15fhdc.webp"
+                        alt="EF2063 15P Flora High density cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">EF2063 15P Flora High density cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 64: EF2062 14P Flora High density cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/14pfhdc.webp"
+                        alt="EF2062 14P Flora High density cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">EF2062 14P Flora High density cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 65: SC-SC Double core Fiber Optic cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dcfow.webp"
+                        alt="SC-SC Double core Fiber Optic cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">SC-SC Double core Fiber Optic cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 43: Wit-color 1000 data cable -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witc1000dc.webp"
+                        alt="Wit-color 1000 data cable" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Wit-color 1000 data cable</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 70: Printhead Data Cables -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/pdc.png"
+                        alt="Printhead Data Cables" /></div>
+                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/pdc2.webp"
+                        alt="Printhead Data Cables" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Printhead Data Cables</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- CONNECTORS -->
+
+        <!-- Card 49: Straight Connector -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sc.webp"
+                        alt="Straight Connector" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Straight Connector</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 50: Right angle two-way Connector -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ratwc.webp"
+                        alt="Right angle two-way Connector" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Right angle two-way Connector</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 51: Y type tri-way Connector -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/yttwc.webp"
+                        alt="Y type tri-way Connector" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Y type tri-way Connector</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 52: Straight Cutting Connector -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scc.webp"
+                        alt="Straight Cutting Connector" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Straight Cutting Connector</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 53: Y type tri-way connector Connector -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/yttwc2.webp"
+                        alt="Y type tri-way connector Connector" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Y type tri-way connector Connector</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- DAMPERS -->
+
+        <!-- Card 97: Dx5 small damper (Square/Big Filter) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/aids.webp"
+                        alt="Dx5 small damper (Square/Big Filter)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Dx5 small damper (Square/Big Filter)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 98: JV5/JV33 Damper -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/JV5J331.webp"
+                        alt="JV5/JV33 Damper" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">JV5/JV33 Damper</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 99: JV5/JV33 Damper (Clip Buckleport) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/JV5J332.webp"
+                        alt="JV5/JV33 Damper (Clip Buckleport)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">JV5/JV33 Damper (Clip Buckleport)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 100: Damper (Pagoda Port) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dpp.webp"
+                        alt="Damper (Pagoda Port)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Damper (Pagoda Port)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 101: Damper (Straight Socket) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dss.webp"
+                        alt="Damper (Straight Socket)" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Damper (Straight Socket)</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 101: Assorted Ink Dampers -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/aids.webp"
+                        alt="Assorted Ink Dampers" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted Ink Dampers</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- VALVES -->
+
+        <!-- Card 29: ECS1157-3 Split-Flow Valve  -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1157-3.webp"
+                        alt="ECS1157-3 Split-Flow Valve &lpar;2 hole&rpar;" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ECS1157-3 Split-Flow Valve &lpar;2 hole&rpar;</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 30: ECS1157-4 Split-Flow Valve  -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1157-4.webp"
+                        alt="ECS1157-4 Split-Flow Valve &lpar;4 hole&rpar;" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ECS1157-4 Split-Flow Valve &lpar;4 hole&rpar;</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 118: 4 Cut-off Valve -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4cov.webp"
+                        alt="4 Cut-off Valve" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">4 Cut-off Valve</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- DECODER -->
+
+        <!-- Card 91: Epson 5113 2/3/4/5 Locked decoder card -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/eldc.webp"
+                        alt="Epson 5113 2/3/4/5 Locked decoder card" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Epson 5113 2/3/4/5 Locked decoder card</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 92: First-time Locked decoder card -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ftldc.webp"
+                        alt="First-time Locked decoder card" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">First-time Locked decoder card</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- INK ITEMS -->
+
+        <!-- Card 31: 4.5cm Disk Ink Filter -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4.5dif.webp"
+                        alt="4.5cm Disk Ink Filter" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">4.5cm Disk Ink Filter</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 32: ECS1000-1 200mm Stirrer For Ink Box -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1000sfib.webp"
+                        alt="ECS1000-1 200mm Stirrer For Ink Box" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ECS1000-1 200mm Stirrer For Ink Box</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 67: Assorted Ink Tubes -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ait1.webp"
+                        alt="Assorted Ink Tubes" /></div>
+                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ait2.webp"
+                        alt="Assorted Ink Tubes" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted Ink Tubes</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 103: 1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm Control Panel -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/1500mlic.webp"
+                        alt="1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm Control Panel" />
+                </div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm
+                    Control Panel</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 104: CISS Ink Cartiradges -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cissic.webp"
+                        alt="CISS Ink Cartiradges" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">CISS Ink Cartiradges</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 115: EECS1146-9 CISS Connector Of ink Tank -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisscoit1.jpg"
+                        alt=" EECS1146-9 CISS Connector Of ink Tank" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title"> EECS1146-9 CISS Connector Of ink Tank</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 116: EECS1146-8 CISS Connector Of Ink Tank -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisscoit2.jpg"
+                        alt="EECS1146-8 CISS Connector Of Ink Tank" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">EECS1146-8 CISS Connector Of Ink Tank</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 117: ECS1054 CISS Clamp -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cissclamp.jpg"
+                        alt="ECS1054 CISS Clamp" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">ECS1054 CISS Clamp</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 119: Assorted CISS Chips -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisschips.webp"
+                        alt="Assorted CISS Chips" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted CISS Chips</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 69: Assorted Belts (Long/Short) -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ab1.webp"
+                        alt="Assorted Belts &lpar;Long/Short&rpar;" /></div>
+                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ab2.webp"
+                        alt="Assorted  Belts &lpar;Long/Short&rpar;" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted Belts &lpar;Long/Short&rpar;</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 102: Assorted Wiper/Wiper Holder -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/awwh.webp"
+                        alt="Assorted Wiper/Wiper Holder" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Assorted Wiper/Wiper Holder</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- BLADES -->
+
+        <!-- Card 120: Roland ZEC-U1005 Blade 45 Degree -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/rb45deg.webp"
+                        alt="Roland ZEC-U1005 Blade 45 Degree" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Roland ZEC-U1005 Blade 45 Degree</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 121: Mimaki Blade 60 Degree -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/mb60deg.webp"
+                        alt="Mimaki Blade 60 Degree" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Mimaki Blade 60 Degree</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 122: Roland Ettering Holder -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/reh.webp"
+                        alt="Roland Ettering Holder" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Roland Ettering Holder</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 123: Head Cleaning Kit -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hck.webp"
+                        alt="Head Cleaning Kit" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Head Cleaning Kit</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 130: Cool UV Lamp Light -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cuvl.webp"
+                        alt="Cool UV Lamp Light" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">Cool UV Lamp Light</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 131: UV DTF Integrated Y Driving Motor Model No. iESV57 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/uvdtfiym.webp"
+                        alt="UV DTF Integrated Y Driving Motor Model No. iESV57" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">UV DTF Integrated Y Driving Motor Model No. iESV57</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 132: UV DTF Integrated X Motor Model No. iHSV57 -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/uvdtfixm.webp"
+                        alt="UV DTF Integrated X Motor Model No. iHSV57" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">UV DTF Integrated X Motor Model No. iHSV57</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- Card 134: SX4009-P1 Limit Switch Sensor For Inkjet Printers -->
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
+            <div class="imageProduct">
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sx4009p1.webp"
+                        alt="SX4009-P1 Limit Switch Sensor For Inkjet Printers" /></div>
+            </div>
+            <div class="product-details">
+                <div class="product-title">SX4009-P1 Limit Switch Sensor For Inkjet Printers</div>
+            </div>
+            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
+        </div>
+
+        <!-- INK PUMPS -->
+
         <!-- Card 1: E1002 Small Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1002.webp"
                         alt="E1002 Small Ink Pump" /></div>
@@ -83,7 +1477,7 @@
         </div>
 
         <!-- Card 2: E1003 Small Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1003.webp"
                         alt="E1003 Small Ink Pump" /></div>
@@ -109,7 +1503,7 @@
         </div>
 
         <!-- Card 3: E1009 Big Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1009.webp"
                         alt="E1009 Big Ink Pump" /></div>
@@ -135,7 +1529,7 @@
         </div>
 
         <!-- Card 4: E1009-2 Big Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1009-2.webp"
                         alt="E1009-2 Small Ink Pump" /></div>
@@ -161,7 +1555,7 @@
         </div>
 
         <!-- Card 5: EN3034 Diaphragm Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/en3034.webp"
                         alt="EN3034 Diaphragm Pump" /></div>
@@ -187,7 +1581,7 @@
         </div>
 
         <!-- Card 6: E1105-1 Diaphragm Pump-C -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1105-1.webp"
                         alt="E1105-1 Diaphragm Pump-C" /></div>
@@ -213,7 +1607,7 @@
         </div>
 
         <!-- Card 7: EC3007 Diaphragm Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ec3007.webp"
                         alt="EC3007 Diaphragm Pump" /></div>
@@ -239,7 +1633,7 @@
         </div>
 
         <!-- Card 8: E1001-1 Small Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1001-1.webp"
                         alt="E1001-1 Small Ink Pump" /></div>
@@ -265,7 +1659,7 @@
         </div>
 
         <!-- Card 9: E1095-1 Big Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1003.webp"
                         alt="E1095-1 Big Ink Pump" /></div>
@@ -291,7 +1685,7 @@
         </div>
 
         <!-- Card 10: E1034 Air Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1002.webp"
                         alt="E1034 Air Pump" /></div>
@@ -317,7 +1711,7 @@
         </div>
 
         <!-- Card 11: E1105-2 Big Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1105-2.webp"
                         alt="E1105-2 Big Pump" /></div>
@@ -339,7 +1733,7 @@
         </div>
 
         <!-- Card 12: E1010-2 Peristaltic Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1010-2.webp"
                         alt="E1010-2 Peristaltic Pump" /></div>
@@ -365,7 +1759,7 @@
         </div>
 
         <!-- Card 13: E1005 Air Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1002.webp"
                         alt="E1005 Air Pump" /></div>
@@ -391,7 +1785,7 @@
         </div>
 
         <!-- Card 14: E1010-6 JYYB-RD-3-1 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1010-6.webp"
                         alt="E1010-6 JYYB-RD-3-1 Peristaltic Pump" /></div>
@@ -417,7 +1811,7 @@
         </div>
 
         <!-- Card 15: E1009-3 JYY-PUB-30 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1009-3.webp"
                         alt="E1009-3 JYY-PUB-30 UV Big Ink Pump" /></div>
@@ -443,7 +1837,7 @@
         </div>
 
         <!-- Card 16: E1008 Big Ink Pump -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1008.webp"
                         alt="E1008 Big Ink Pump" /></div>
@@ -469,9 +1863,9 @@
         </div>
 
         <!-- Card 17: E1010-1 HH-RDB-125 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1010-1.webp"
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1010-1.png"
                         alt="E1010-1 HH-RDB-125 Peristaltic Pump" /></div>
             </div>
             <div class="product-details">
@@ -495,7 +1889,7 @@
         </div>
 
         <!-- Card 18: E1009-4 JYY-PUB-30 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1009-4.webp"
                         alt="E1009-4 JYY-PUB-30 Solvent Big Ink Pump" /></div>
@@ -521,7 +1915,7 @@
         </div>
 
         <!-- Card 19: E1281-1 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1281-1.webp"
                         alt="E1281-1 Ink Pump with Brush" /></div>
@@ -547,9 +1941,9 @@
         </div>
 
         <!-- Card 20: E1284-2 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1284-2.webp"
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1284-2.png"
                         alt="E1284-2 Ink Pump with Brush" /></div>
             </div>
             <div class="product-details">
@@ -573,7 +1967,7 @@
         </div>
 
         <!-- Card 21: KNF2001 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/knf2001.webp"
                         alt="KNF2001 KNF Air Pump" /></div>
@@ -599,7 +1993,7 @@
         </div>
 
         <!-- Card 22: E1004 AKN-20 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e1004.webp"
                         alt="E1004 AKN-20 Big Ink Pump" /></div>
@@ -625,9 +2019,9 @@
         </div>
 
         <!-- Card 23: KNF2004 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/knf2004.webp"
+                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/knf2004.png"
                         alt="KNF2004 KNF Small Ink Pump (PM15129-NF10)" /></div>
             </div>
             <div class="product-details">
@@ -655,7 +2049,7 @@
         </div>
 
         <!-- Card 24: KNF2005 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/knf2005.webp"
                         alt="KNF2005 KNF Big Ink Pump (ML10301-NF30)" /></div>
@@ -685,7 +2079,7 @@
         </div>
 
         <!-- Card 25: SPT1000 MV-SD700E -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/spt1000.webp"
                         alt="SPT1000 SYPTDA Air Negative Pressure Pump MV-SD700E" /></div>
@@ -711,7 +2105,7 @@
         </div>
 
         <!-- Card 26: SPT1001 MV-SD600E -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/spt1001.webp"
                         alt="SPT1001 SYPTDA MV-SD600E Big Pump" /></div>
@@ -737,7 +2131,7 @@
         </div>
 
         <!-- Card 27: SPT1002 MV-SD100E UV -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/spt1002.webp"
                         alt="SPT1002 SYPTDA MV-SD100E UV Small Ink Pump" /></div>
@@ -763,7 +2157,7 @@
         </div>
 
         <!-- Card 28: SPT1003 MV-SD300E UV -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/spt1002.webp"
                         alt="SPT1003 SYPTDA MV-SD300E UV Big Ink Pump" /></div>
@@ -787,1313 +2181,79 @@
             </div>
             <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
         </div>
-        
-        <!-- Card 29: ECS1157-3 Split-Flow Valve  -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1157-3.webp"
-                        alt="ECS1157-3 Split-Flow Valve &lpar;2 hole&rpar;" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ECS1157-3 Split-Flow Valve &lpar;2 hole&rpar;</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 30: ECS1157-4 Split-Flow Valve  -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1157-4.webp"
-                        alt="ECS1157-4 Split-Flow Valve &lpar;4 hole&rpar;" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ECS1157-4 Split-Flow Valve &lpar;4 hole&rpar;</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 31: 4.5cm Disk Ink Filter -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4.5dif.webp"
-                        alt="4.5cm Disk Ink Filter" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">4.5cm Disk Ink Filter</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 32: ECS1000-1 200mm Stirrer For Ink Box -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ecs1000sfib.webp"
-                        alt="ECS1000-1 200mm Stirrer For Ink Box" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ECS1000-1 200mm Stirrer For Ink Box</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 33: H9730 180dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9730180.webp"
-                        alt="H9730 180dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9730 180dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 34: H9720 150dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9720150.webp"
-                        alt="H9720 150dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9720 150dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 35: H9780 360dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9780360.webp"
-                        alt="H9780 360dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9780 360dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 36: H9740 360dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9740360.webp"
-                        alt="H9740 360dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9740 360dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 37: H9740 300dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9740300.webp"
-                        alt="H9740 300dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9740 300dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 38: Encoder sensor for FTL printer -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/esfftlp.webp"
-                        alt="Encoder sensor for FTL printer" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Encoder sensor for FTL printer</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 39: H9700 200dpi encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9700200.webp"
-                        alt="H9700 200dpi encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9700 200dpi encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 40: H9700-H1116 encoder reader -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9700h1116.webp"
-                        alt="H9700-H1116 encoder reader" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9700-H1116 encoder reader</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 41: Lcotec Encoder Sensor -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/les.webp"
-                        alt="Lcotec Encoder Sensor" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Lcotec Encoder Sensor</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 42: Wit-color 860 Encoder Sensor -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witc850es.webp"
-                        alt="Wit-color 860 Encoder Sensor" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Wit-color 860 Encoder Sensor</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 43: Wit-color 1000 data cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witc1000dc.webp"
-                        alt="Wit-color 1000 data cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Wit-color 1000 data cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 44: Encoder Strip Holder (with-iron) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/eshwi.webp"
-                        alt="Encoder Strip Holder (with-iron)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Encoder Strip Holder (with-iron)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 45: Wit-color 9200 Encoder Sensor (original) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/witceso.webp"
-                        alt="Wit-color 9200 Encoder Sensor (original)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Wit-color 9200 Encoder Sensor (original)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 46: Encoder Strip Holder -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/esh.webp"
-                        alt="Encoder Strip Holder" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Encoder Strip Holder</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 47: H9720 encoder sensor -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9720es.webp"
-                        alt="H9720 encoder sensor" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9720 encoder sensor</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 48: H9730 encoder sensor -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/h9730es.webp"
-                        alt="H9730 encoder sensor" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">H9730 encoder sensor</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 49: Straight Connector -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sc.webp"
-                        alt="Straight Connector" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Straight Connector</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 50: Right angle two-way Connector -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ratwc.webp"
-                        alt="Right angle two-way Connector" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Right angle two-way Connector</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 51: Y type tri-way Connector -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/yttwc.webp"
-                        alt="Y type tri-way Connector" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Y type tri-way Connector</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 52: Straight Cutting Connector -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scc.webp"
-                        alt="Straight Cutting Connector" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Straight Cutting Connector</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 53: Y type tri-way connector Connector -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/yttwc2.webp"
-                        alt="Y type tri-way connector Connector" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Y type tri-way connector Connector</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 54: FC-FC Single core Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scfow.webp"
-                        alt="FC-FC Single core Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">FC-FC Single core Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 55: FC-FC Double core Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dcfow.webp"
-                        alt="FC-FC Double core Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">FC-FC Double core Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 56: High Density Cable / Optical Fibre -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scdcdfoc.webp"
-                        alt="High Density Cable / Optical Fibre" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">High Density Cable / Optical Fibre</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 57: SC-SC Single core Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scscfow.webp"
-                        alt="SC-SC Single core Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">SC-SC Single core Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 58: SC-SC Double core duplex Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scdcdfoc.webp"
-                        alt="SC-SC Double core duplex Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">SC-SC Double core duplex Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 59: SC-FC Single core Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/scfcscfoc.webp"
-                        alt="SC-FC Single core Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">SC-FC Single core Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 60: ACF203726P 7M High density cable (Double head) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdcdh.webp"
-                        alt="ACF203726P 7M High density cable (Double head)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ACF203726P 7M High density cable (Double head)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 61: ACF 1049 High density cable double head 14P 7M -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdcdh.webp"
-                        alt="ACF 1049 High density cable double head 14P 7M" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ACF 1049 High density cable double head 14P 7M</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 62: E10206 Purple High density cable 14P 4M/6M/9M -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hdc14p.webp"
-                        alt="E10206 Purple High density cable 14P 4M/6M/9M" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E10206 Purple High density cable 14P 4M/6M/9M</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 63: EF2063 15P Flora High density cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/15fhdc.webp"
-                        alt="EF2063 15P Flora High density cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">EF2063 15P Flora High density cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 64: EF2062 14P Flora High density cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/14pfhdc.webp"
-                        alt="EF2062 14P Flora High density cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">EF2062 14P Flora High density cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 65: SC-SC Double core Fiber Optic cable -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dcfow.webp"
-                        alt="SC-SC Double core Fiber Optic cable" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">SC-SC Double core Fiber Optic cable</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 67: Assorted Ink Tubes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ait1.webp"
-                        alt="Assorted Ink Tubes" /></div>
-                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ait2.webp"
-                        alt="Assorted Ink Tubes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted Ink Tubes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 68: Assorted Design Encoder Strips -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ades1.webp"
-                        alt="Assorted Design Encoder Strips" /></div>
-                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ades2.webp"
-                        alt="Assorted Design Encoder Strips" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted Design Encoder Strips</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 69: Assorted Belts (Long/Short) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ab1.webp"
-                        alt="Assorted Belts &lpar;Long/Short&rpar;" /></div>
-                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/ab2.webp"
-                        alt="Assorted  Belts &lpar;Long/Short&rpar;" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted Belts &lpar;Long/Short&rpar;</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 70: Printhead Data Cables -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/pdc.webp"
-                        alt="Printhead Data Cables" /></div>
-                <div class="imgInner2"><img class="product-image" src="Images/Products/Material/Parts/pdc2.webp"
-                        alt="Printhead Data Cables" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Printhead Data Cables</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 71(E6014 Epson i3200 Double Carriage Board) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200dcb.webp"
-                        alt="Epson i3200 Double Carriage Board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson i3200 Double Carriage Board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 72(E6014-1 Epson i3200 Carriage Board (4 head)) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200dcb4h.webp"
-                        alt="Epson i3200 Carriage Board (4 head)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson i3200 Carriage Board (4 head)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 73(E6015 Epson i3200 Board (Single head)) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200bsh.webp"
-                        alt="Epson i3200 Board (Single head)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson i3200 Board (Single head)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 74(E3362 KM1024i 8 Heads Kit Board) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/km1024i8hkb.webp"
-                        alt="KM1024i 8 Heads Kit Board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">KM1024i 8 Heads Kit Board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 75(E3225 XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600shb.webp"
-                        alt="XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 Single Head Board Kit XYP 2in1 for Magic Color Machine</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 76(E6016-1 Epson i3200 Connector Board) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ei3200cb.webp"
-                        alt="Epson i3200 Connector Board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson i3200 Connector Board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 77(E1259 Epson XP600 Display Kit Sanyang Version) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/wxp600dksv.webp"
-                        alt="Epson XP600 Display Kit Sanyang Version" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson XP600 Display Kit (Sanyang Version)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 78(E3278-7 I3200E1 Single Head Board Full Kit) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/i3200e1shbfk.webp"
-                        alt="I3200E1 Single Head Board Full Kit" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">I3200E1 Single Head Board Full Kit</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 79(E3278-8 I3200E1 Double Head Board Full Kit) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/i3200dhbfk.webp"
-                        alt="I3200E1 Double Head Board Full Kit" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">I3200E1 Double Head Board Full Kit</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 80: BYHX dx5 head board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/byhxdx5hb.webp"
-                        alt="BYHX dx5 head board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">BYHX dx5 head board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 81: BYHX dx5 main board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/byhxdx5mb.webp"
-                        alt="BYHX dx5 main board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">BYHX dx5 main board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 82: Xuli printhead control board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xphcb.webp"
-                        alt="Xuli printhead control board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Xuli printhead control board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 83: XP600 Double Head Hanson Board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600dhhb.webp"
-                        alt="XP600 Double Head Hanson Board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 Double Head Hanson Board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 84: XP600 double head -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600dh.webp"
-                        alt="XP600 double head" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 double head</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 85: XP600 single head board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600shb.webp"
-                        alt="XP600 single head board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 single head board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 86: DX5 Main Board for Epson R1900 Printer -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image"
-                        src="Images/Products/Material/Parts/dx5mbfer1900p.webp"
-                        alt="DX5 Main Board for Epson R1900 Printer" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">DX5 Main Board for Epson R1900 Printer</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 87: DX5 single head board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5shb.webp"
-                        alt="DX5 single head board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">DX5 single head board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 88: DX5 to DX7 Convertor -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5todx7c.webp"
-                        alt="DX5 to DX7 Convertor" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">DX5 to DX7 Convertor</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 89: XP600 hoson set board for double head -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600hsbfdh.webp"
-                        alt="XP600 hoson set board for double head" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 hoson set board for double head</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 90: DX5 printhead board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dx5phb.webp"
-                        alt="DX5 printhead board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">DX5 printhead board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 91: Epson 5113 2/3/4/5 Locked decoder card -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/eldc.webp"
-                        alt="Epson 5113 2/3/4/5 Locked decoder card" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson 5113 2/3/4/5 Locked decoder card</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 92: First-time Locked decoder card -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/ftldc.webp"
-                        alt="First-time Locked decoder card" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">First-time Locked decoder card</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 93: Epson i3200 Single Head UV Full Board Kit -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image"
-                        src="Images/Products/Material/Parts/ei3200shuvfbk.webp"
-                        alt="Epson i3200 Single Head UV Full Board Kit" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Epson i3200 Single Head UV Full Board Kit</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 94: Konica 512 UMC board 1.4i -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/k512umcb.webp"
-                        alt="Konica 512 UMC board 1.4i" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Konica 512 UMC board 1.4i</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 95: Transfer card from 5113/4720 head to i3200 hanson board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/tcfhti3200hb.webp"
-                        alt="Transfer card from 5113/4720 head to i3200 hanson board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Transfer card from 5113/4720 head to i3200 hanson board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 96: XP600 printhead transfer board -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600phtb.webp"
-                        alt="XP600 printhead transfer board" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 printhead transfer board</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 97: Dx5 small damper (Square/Big Filter) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/aids.webp"
-                        alt="Dx5 small damper (Square/Big Filter)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Dx5 small damper (Square/Big Filter)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 98: JV5/JV33 Damper -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/JV5J331.webp"
-                        alt="JV5/JV33 Damper" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">JV5/JV33 Damper</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 99: JV5/JV33 Damper (Clip Buckleport) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/JV5J332.webp"
-                        alt="JV5/JV33 Damper (Clip Buckleport)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">JV5/JV33 Damper (Clip Buckleport)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 100: Damper (Pagoda Port) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dpp.webp"
-                        alt="Damper (Pagoda Port)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Damper (Pagoda Port)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 101: Damper (Straight Socket) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/dss.webp"
-                        alt="Damper (Straight Socket)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Damper (Straight Socket)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 101: Assorted Ink Dampers -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/aids.webp"
-                        alt="Assorted Ink Dampers" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted Ink Dampers</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 102: Assorted Wiper/Wiper Holder -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/awwh.webp"
-                        alt="Assorted Wiper/Wiper Holder" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted Wiper/Wiper Holder</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 103: 1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm Control Panel -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/1500mlic.webp"
-                        alt="1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm Control Panel" />
-                </div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">1500ml Ink Cartirage with Stirrer, Ink Filter, Ink Level Sensor, Alarm
-                    Control Panel</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 104: CISS Ink Cartiradges -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cissic.webp"
-                        alt="CISS Ink Cartiradges" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">CISS Ink Cartiradges</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 105: E3192-1 XP600 Cap Top 2 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3192-1xp600ct2h.webp"
-                        alt="E3192-1 XP600 Cap Top 2 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3192-1 XP600 Cap Top 2 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 106: E3310-2 Dx5 Cap Top Side With 2 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3310-2dx5ctsw2h.webp"
-                        alt="E3310-2 Dx5 Cap Top Side With 2 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3310-2 Dx5 Cap Top Side With 2 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 107: E3310-3 Dx5 Cap Hole 2 Holes In The Middle -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3310-3dx5ct2hitm.webp"
-                        alt="E3310-3 Dx5 Cap Hole 2 Holes In The Middle" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3310-3 Dx5 Cap Hole 2 Holes In The Middle</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 108: E3326-1 Horizontal Shape Cap Top 2 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3326-1hsct2h.webp"
-                        alt="E3326-1 Horizontal Shape Cap Top 2 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3326-1 Horizontal Shape Cap Top 2 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 109: E3326-2 Horizontal Shape Cap Top Side With Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3326-2hsctswh.webp"
-                        alt="E3326-2 Horizontal Shape Cap Top Side With Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3326-2 Horizontal Shape Cap Top Side With Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 110: E3333-2 TX800 Black Cap Top 3 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3333-2tx800bct3h.webp"
-                        alt="E3333-2 TX800 Black Cap Top 3 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3333-2 TX800 Black Cap Top 3 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 111: E3334-1 TX800 Black Cap Top 3 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3334-1tx800bct3h.webp"
-                        alt="E3334-1 TX800 Black Cap Top 3 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3334-1 TX800 Black Cap Top 3 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 112: E3335 TX800 XP600 Cap Top 3 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/tx800tx600ct3h.webp"
-                        alt="E3335 TX800 XP600 Cap Top 3 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3335 TX800 XP600 Cap Top 3 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 113: E3336-1 Black Net Cap Top 2 Holes -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3336-1bnct2h.webp"
-                        alt="E3336-1 Black Net Cap Top 2 Holes" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3336-1 Black Net Cap Top 2 Holes</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 114: E3391 Dx5 Dx7 My-Jet Cap Top -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/e3391mjct.webp"
-                        alt="E3391 Dx5 Dx7 My-Jet Cap Top" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">E3391 Dx5 Dx7 My-Jet Cap Top</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 115: EECS1146-9 CISS Connector Of ink Tank -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisscoit1.webp"
-                        alt=" EECS1146-9 CISS Connector Of ink Tank" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title"> EECS1146-9 CISS Connector Of ink Tank</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 116: EECS1146-8 CISS Connector Of Ink Tank -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisscoit2.webp"
-                        alt="EECS1146-8 CISS Connector Of Ink Tank" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">EECS1146-8 CISS Connector Of Ink Tank</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 117: ECS1054 CISS Clamp -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cissclamp.webp"
-                        alt="ECS1054 CISS Clamp" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">ECS1054 CISS Clamp</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 118: 4 Cut-off Valve -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4cov.webp"
-                        alt="4 Cut-off Valve" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">4 Cut-off Valve</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 119: Assorted CISS Chips -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cisschips.webp"
-                        alt="Assorted CISS Chips" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Assorted CISS Chips</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 120: Roland ZEC-U1005 Blade 45 Degree -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/rb45deg.webp"
-                        alt="Roland ZEC-U1005 Blade 45 Degree" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Roland ZEC-U1005 Blade 45 Degree</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 121: Mimaki Blade 60 Degree -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/mb60deg.webp"
-                        alt="Mimaki Blade 60 Degree" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Mimaki Blade 60 Degree</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 122: Roland Ettering Holder -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/reh.webp"
-                        alt="Roland Ettering Holder" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Roland Ettering Holder</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 123: Head Cleaning Kit -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hck.webp"
-                        alt="Head Cleaning Kit" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Head Cleaning Kit</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 124: Print Head Epson XP600 -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/phexp600.webp"
-                        alt="Print Head Epson XP600" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Print Head Epson XP600</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 124: Print Head Epson i3200 -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/phei3200.webp"
-                        alt="Print Head Epson i3200" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Print Head Epson i3200</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 125: Hanson Main Board GLB v2.75.11 (i3200x2) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hmbglb.webp"
-                        alt="Hanson Main Board GLB v2.75.11 (i3200x2)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Hanson Main Board GLB v2.75.11 (i3200x2)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 126: Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF board) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hhbhebeps.webp"
-                        alt="Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF board)" />
-                </div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Hoson Head board HEB EPS 2H v1.43 (i3200 Hoson kit convertor kit inkjet DTF
-                    board)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 127: XP600 Head Main Board (Network Controller HEB-C-01) -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/xp600hmbnc.webp"
-                        alt="XP600 Head Main Board (Network Controller HEB-C-01)" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">XP600 Head Main Board (Network Controller HEB-C-01)</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 128: Hoson XP600 Cable Board Double Head Adapter Board For Epson -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/hxp600cbdhabfe.webp"
-                        alt="Hoson XP600 Cable Board Double Head Adapter Board For Epson" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Hoson XP600 Cable Board Double Head Adapter Board For Epson</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 129: 4720 i3200 Adapter Convert Card Honson i3200 -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/4720i3200.webp"
-                        alt="4720 i3200 Adapter Convert Card Honson i3200" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">4720 i3200 Adapter Convert Card Honson i3200</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 130: Cool UV Lamp Light -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/cuvl.webp"
-                        alt="Cool UV Lamp Light" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Cool UV Lamp Light</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 131: UV DTF Integrated Y Driving Motor Model No. iESV57 -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/uvdtfiym.webp"
-                        alt="UV DTF Integrated Y Driving Motor Model No. iESV57" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">UV DTF Integrated Y Driving Motor Model No. iESV57</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 132: UV DTF Integrated X Motor Model No. iHSV57 -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/uvdtfixm.webp"
-                        alt="UV DTF Integrated X Motor Model No. iHSV57" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">UV DTF Integrated X Motor Model No. iHSV57</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 133: Sensor Fita Encoder -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sfe.webp"
-                        alt="Sensor Fita Encoder" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">Sensor Fita Encoder</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
-
-        <!-- Card 134: SX4009-P1 Limit Switch Sensor For Inkjet Printers -->
-        <div class="productCard" data-aos="fade-up">
-            <div class="imageProduct">
-                <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Parts/sx4009p1.webp"
-                        alt="SX4009-P1 Limit Switch Sensor For Inkjet Printers" /></div>
-            </div>
-            <div class="product-details">
-                <div class="product-title">SX4009-P1 Limit Switch Sensor For Inkjet Printers</div>
-            </div>
-            <a href="https://wa.me/+971504217267?text=" class="getAQuote" target="_blank">Get A Quote</a>
-        </div>
     </div>
 
     <footer>
-        <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer
-                    Khan</b></a></p>
+        <div class="footerMainContainer">
+            <div class="footerInner1">
+                <img src="Images/Logos/inkjetGlobalLogoFull.webp" alt="">
+                <p>
+                    <span>Inkjet Global</span> offers top-quality printers, large format printers, printing material,
+                    and spare
+                    parts.
+                    Your trusted partner for professional printing solutions.
+                </p>
+            </div>
+
+            <div class="footerInner2">
+                <div class="footerInner2-1">
+                    <form action="">
+                        <input type="email" name="emailForSubscription" id="emailForSubscription"
+                            placeholder="Subscribe To Our Newsletter">
+                        <button type="reset" onclick="alert('Thanks For Subscribing!')">Subscribe Now!</button>
+                    </form>
+                </div>
+
+                <div class="footerInner2-2">
+                    <div class="footerLinkLists">
+                        <h3>Products</h3>
+                        <a href="uv.html" class="footerLink">UV <small>(DTF)</small> Printers</a>
+                        <a href="dtf.html" class="footerLink">Textile DTF Printers</a>
+                        <a href="ecosolvent.html" class="footerLink">Eco Solvent Printer</a>
+                        <a href="sublimation.html" class="footerLink">Sublimation Printer</a>
+                        <a href="laser.html" class="footerLink">Laser Machines</a>
+                        <a href="plotter.html" class="footerLink">Plotter & Cutting Machines</a>
+                        <a href="heattransfer.html" class="footerLink">Heat Transfer Machines</a>
+                        <a href="inks.html" class="footerLink">Inks</a>
+                        <a href="material.html" class="footerLink">Prinitng Material</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Useful Links</h3>
+                        <a href="index.html" class="footerLink">Home</a>
+                        <a href="contact.html" class="footerLink">Contact Us</a>
+                        <a href="application.html" class="footerLink">Application</a>
+                        <a href="contact.html#Apply-For-A-Job" class="footerLink">Apply For Job</a>
+                        <a href="sitemap.xml" class="footerLink" target="_blank">Sitemap</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Parts & Services</h3>
+                        <a href="techsupport.html" class="footerLink">Technical Support</a>
+                        <a href="training.html" class="footerLink">Training</a>
+                        <a href="parts.html" class="footerLink">Spare Parts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footerDisclamer">
+            <p><i class="fa-regular fa-copyright"></i> 2025 <span>Inkjet Global</span> | All Rights Reserved</p>
+
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="font-family: 'Gorga Regular';">&lpar;based on 17 reviews&rpar;</span>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="Dependencies/js/aos.js"></script>
     <script src="loader.js"></script>
     <script src="script.js"></script>
 </body>

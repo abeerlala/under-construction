@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Developed By Abeer Khan (https://mabeerkhan.com) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Primary Meta Tags -->
@@ -27,11 +28,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- DEPENDENCIES -->
+    <link rel="stylesheet" href="Dependencies/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/brands.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/solid.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/regular.min.css" />
+
+    <link rel="stylesheet" href="Dependencies/css/aos.css" />
+
+    <link rel="stylesheet" href="Dependencies/css/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -41,10 +46,44 @@
         </div>
     </div>
 
-    <a id="toTop" aria-label="Go To Top"><i class="fa-solid fa-arrow-up"></i></a>
-    <a id="toCall" aria-label="Call Us" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
-    <a id="toWhatsapp" aria-label="Talk To Us On Whatsapp" href="https://wa.me/+971504217267" target="_blank"><i
-            class="fa-brands fa-whatsapp"></i></a>
+    <div class="sideIcons">
+        <a id="toTop" aria-label="Go To Top"><i style="font-size: 1.2rem;" class="fa-solid fa-arrow-up"></i></a>
+
+        <a aria-label="Call Us" href="tel:+971504217267"><i style="font-size: 1.2rem;"
+                class="fa-solid fa-phone"></i></a>
+
+        <a aria-label="Expand Social Icons" title="Expand Social Icons" id="openSocials" class="openSocials"
+            onclick="openSocialsFn()"><i id="openSocialsIcon" class="fa-solid fa-angle-up"></i></a>
+
+        <a style="background-color: #25d366;" aria-label="Talk To Us On Whatsapp" href="https://wa.me/+971504217267"
+            target="_blank"><i style="font-size: 1.4rem;" class="fa-brands fa-whatsapp"></i></a>
+
+        <div class="sideIconsInner">
+            <a aria-label="Visit Inkjet Global Facebook Page" href="https://www.facebook.com/share/1FHeWxCKLt/"
+                target="_blank" style="background-color: #4267B2;">
+                <i style="font-size: 1.4rem;" class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Instagram"
+                href="https://www.instagram.com/inkjetglobal?igsh=enB1NmFqcGo0NjFy" target="_blank"
+                style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                <i style="font-size: 1.5rem;" class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Tiktok"
+                href="https://www.tiktok.com/@inkjet.global.by?_t=ZS-8zMi0zAPcY8&_r=1" target="_blank"
+                style="background-color: #000000;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Linked In"
+                href="https://www.linkedin.com/in/inkjet-global-by-reliance-b19211382" target="_blank"
+                style="background-color: #0077B5;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+
     <nav id="nav"></nav>
     <div class="search2" id="searchcontainer"></div>
 
@@ -347,13 +386,13 @@
 
             <form action="">
                 <label for="company">Company Name</label>
-                <input type="text" name="company" id="company" placeholder="Company Name">
+                <input autocomplete="on" type="text" name="company" id="company" placeholder="Company Name">
 
                 <label for="name">Full Name*</label>
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
+                <input autocomplete="on" type="text" id="name" name="name" placeholder="Full Name" required>
 
                 <label for="email">Email*</label>
-                <input type="text" id="email" name="email" placeholder="example@domain.com" required>
+                <input autocomplete="on" type="text" id="email" name="email" placeholder="example@domain.com" required>
 
                 <label for="product">Select Product *</label>
                 <select name="product" id="product" required>
@@ -389,12 +428,77 @@
     </section>
 
     <footer>
-        <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer
-                    Khan</b></a></p>
+        <div class="footerMainContainer">
+            <div class="footerInner1">
+                <img src="Images/Logos/inkjetGlobalLogoFull.webp" alt="">
+                <p>
+                    <span>Inkjet Global</span> offers top-quality printers, large format printers, printing material,
+                    and spare
+                    parts.
+                    Your trusted partner for professional printing solutions.
+                </p>
+            </div>
+
+            <div class="footerInner2">
+                <div class="footerInner2-1">
+                    <form onsubmit="alert('Thanks For Subscribing!')">
+                        <input type="email" name="emailForSubscription" id="emailForSubscription"
+                            placeholder="Subscribe To Our Newsletter">
+                        <button type="reset">Subscribe Now!</button>
+                    </form>
+                </div>
+
+                <div class="footerInner2-2">
+                    <div class="footerLinkLists">
+                        <h3>Products</h3>
+                        <a href="uv.html" class="footerLink">UV <small>(DTF)</small> Printers</a>
+                        <a href="dtf.html" class="footerLink">Textile DTF Printers</a>
+                        <a href="ecosolvent.html" class="footerLink">Eco Solvent Printer</a>
+                        <a href="sublimation.html" class="footerLink">Sublimation Printer</a>
+                        <a href="laser.html" class="footerLink">Laser Machines</a>
+                        <a href="plotter.html" class="footerLink">Plotter & Cutting Machines</a>
+                        <a href="heattransfer.html" class="footerLink">Heat Transfer Machines</a>
+                        <a href="inks.html" class="footerLink">Inks</a>
+                        <a href="material.html" class="footerLink">Prinitng Material</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Useful Links</h3>
+                        <a href="index.html" class="footerLink">Home</a>
+                        <a href="contact.html" class="footerLink">Contact Us</a>
+                        <a href="application.html" class="footerLink">Application</a>
+                        <a href="contact.html#Apply-For-A-Job" class="footerLink">Apply For Job</a>
+                        <a href="sitemap.xml" class="footerLink" target="_blank">Sitemap</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Parts & Services</h3>
+                        <a href="techsupport.html" class="footerLink">Technical Support</a>
+                        <a href="training.html" class="footerLink">Training</a>
+                        <a href="parts.html" class="footerLink">Spare Parts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footerDisclamer">
+            <p><i class="fa-regular fa-copyright"></i> 2025 <span>Inkjet Global</span> | All Rights Reserved</p>
+
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="font-family: 'Gorga Regular';">&lpar;based on 17 reviews&rpar;</span>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="Dependencies/js/aos.js"></script>
+    <script src="Dependencies/js/swiper-bundle.min.js"></script>
     <script src="loader.js"></script>
     <script src="script.js"></script>
 </body>

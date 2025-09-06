@@ -9,7 +9,6 @@
 }
 
 @media (max-width: 1030px) {
-
     .search,
     #myUL {
         width: 350px;
@@ -25,6 +24,14 @@
 
     .mainTextInner h1 {
         font-size: 1.4rem;
+    }
+
+    .footerInner1 p {
+        font-size: .9rem;
+    }
+
+    .footerLinkList {
+        font-size: .85rem;
     }
 }
 
@@ -86,6 +93,16 @@
 
     .divider {
         display: block;
+    }
+
+    #openSocials:hover::after {
+        opacity: 0;
+        rotate: 0deg;
+        transform: translateY(0);
+    }
+
+    .footerInner1 {
+        display: none;
     }
 }
 
@@ -249,7 +266,7 @@
         height: calc(100vh - 70px);
         flex-direction: column;
     }
-    
+
     .videosMain.even {
         height: calc(100vh - 70px);
         flex-direction: column;
@@ -264,11 +281,22 @@
     .media {
         width: 100%;
     }
+
+    .footerA {
+        flex-direction: column-reverse;
+        height: 80px;
+        justify-content: center;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 530px) {
     #inquiry form {
         width: 290px;
+    }
+
+    .footerA {
+        height: 90px;
     }
 }
 
@@ -304,6 +332,14 @@
     .contactTopInner2 p {
         font-size: .9rem;
     }
+
+    .footerInner2-2 {
+        flex-wrap: wrap;
+    }
+    
+    .footerLinkLists:first-child {
+        display: none;
+    }
 }
 
 @media (max-width: 375px) {
@@ -326,6 +362,18 @@
 @media (max-width: 600px) {
     .hideImage {
         display: none;
+    }
+
+    .footerInner2-1 input {
+        width: 300px;
+        padding-right: 90px;
+        font-size: .8rem;
+    }
+
+    .footerInner2-1 button {
+        font-size: .6rem;
+        width: auto;
+        padding: 4px 8px 0 8px;
     }
 }
 

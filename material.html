@@ -27,10 +27,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- DEPENDENCIES -->
+    <link rel="stylesheet" href="Dependencies/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/brands.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/solid.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/regular.min.css" />
+
+    <link rel="stylesheet" href="Dependencies/css/aos.css" />
 </head>
 
 <body>
@@ -40,9 +43,44 @@
         </div>
     </div>
 
-    <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
-    <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
-    <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<div class="sideIcons">
+        <a id="toTop" aria-label="Go To Top"><i style="font-size: 1.2rem;" class="fa-solid fa-arrow-up"></i></a>
+
+        <a aria-label="Call Us" href="tel:+971504217267"><i style="font-size: 1.2rem;"
+                class="fa-solid fa-phone"></i></a>
+
+        <a aria-label="Expand Social Icons" title="Expand Social Icons" id="openSocials" class="openSocials"
+            onclick="openSocialsFn()"><i id="openSocialsIcon" class="fa-solid fa-angle-up"></i></a>
+
+        <a style="background-color: #25d366;" aria-label="Talk To Us On Whatsapp" href="https://wa.me/+971504217267"
+            target="_blank"><i style="font-size: 1.4rem;" class="fa-brands fa-whatsapp"></i></a>
+
+        <div class="sideIconsInner">
+            <a aria-label="Visit Inkjet Global Facebook Page" href="https://www.facebook.com/share/1FHeWxCKLt/"
+                target="_blank" style="background-color: #4267B2;">
+                <i style="font-size: 1.4rem;" class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Instagram"
+                href="https://www.instagram.com/inkjetglobal?igsh=enB1NmFqcGo0NjFy" target="_blank"
+                style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                <i style="font-size: 1.5rem;" class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Tiktok"
+                href="https://www.tiktok.com/@inkjet.global.by?_t=ZS-8zMi0zAPcY8&_r=1" target="_blank"
+                style="background-color: #000000;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Linked In"
+                href="https://www.linkedin.com/in/inkjet-global-by-reliance-b19211382" target="_blank"
+                style="background-color: #0077B5;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+
     <nav id="nav"></nav>
     <div class="search2" id="searchcontainer"></div>
 
@@ -65,7 +103,7 @@
     <h2 class="container-head" id="ecoSolventBackStickers">Eco Solvent Back Stickers</h2>
     <div class="product-container">
         <!-- Card 1: EJET Outdoor Matte Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/EcoSolvent/ejetl.webp"
                         alt="EJET Outdoor Matte Vinyl Eco Solvent White Back Sticker" /></div>
@@ -93,7 +131,7 @@
         </div>
 
         <!-- Card 2: OLFA Outdoor Matte Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/EcoSolvent/oll.webp"
                         alt="OLFA Outdoor Matte Vinyl Eco Solvent White Back Sticker" /></div>
@@ -125,7 +163,7 @@
         </div>
 
         <!-- Card 3: RELITACK Outdoor Matte Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/EcoSolvent/rtl.webp"
                         alt="RELITACK Outdoor Matte Vinyl Eco Solvent White Back Sticker" /></div>
@@ -162,7 +200,7 @@
         </div>
 
         <!-- Card 4: RELITACK Matte Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/EcoSolvent/rtl.webp"
                         alt="RELITACK Matte Vinyl Eco Solvent Grey Back Sticker" /></div>
@@ -194,7 +232,7 @@
         </div>
 
         <!-- Card 5: RELITACK Outdoor Glossy Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/EcoSolvent/rtl.webp"
                         alt="RELITACK Outdoor Glossy Vinyl Eco Solvent White Back Sticker" /></div>
@@ -227,7 +265,7 @@
         </div>
 
         <!-- Card 6: RELITACK Eco Solvent  -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtrumvl.webp"
                         alt="RELITACK Eco Solvent Duratrans Film" /></div>
@@ -258,7 +296,7 @@
     <h2 class="container-head" id="plotterColoredVinyl">Plotter Colored Vinyls</h2>
     <div class="product-container">
         <!-- Card 1: EJET Black Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/ebm.webp"
                     alt="EJET Black Matte Plotter Colored Vinyl" />
@@ -276,7 +314,7 @@
         </div>
 
         <!-- Card 2: EJET White Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/ewm.webp"
                     alt="EJET White Matte Plotter Colored Vinyl" />
@@ -294,7 +332,7 @@
         </div>
 
         <!-- Card 3: EJET Red Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/erm.webp"
                     alt="EJET Red Matte Plotter Colored Vinyl" />
@@ -312,7 +350,7 @@
         </div>
 
         <!-- Card 4: EJET Green Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/egm.webp"
                     alt="EJET Green Matte Plotter Colored Vinyl" />
@@ -330,7 +368,7 @@
         </div>
 
         <!-- Card 5: EJET Golden Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/egoldm.webp"
                     alt="EJET Golden Matte Plotter Colored Vinyl" />
@@ -348,7 +386,7 @@
         </div>
 
         <!-- Card 6: RELITACK Black Glossy -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/rtbg.webp"
                     alt="RELITACK Black Glossy Plotter Colored Vinyl" />
@@ -366,7 +404,7 @@
         </div>
 
         <!-- Card 7: RELITACK Silver Glossy -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/rtsg.webp"
                     alt="RELITACK Silver Glossy Plotter Colored Vinyl" />
@@ -384,7 +422,7 @@
         </div>
 
         <!-- Card 8: RELITACK Golden Glossy -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Plotter/rtgg.webp"
                     alt="RELITACK Golden Glossy Plotter Colored Vinyl" />
@@ -405,7 +443,7 @@
     <h2 class="container-head" id="others">Others</h2>
     <div class="product-container">
         <!-- Card 1: RELITACK Transparent Vinyl:  -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtclearl.webp"
                         alt="RELITACK Transparent Vinyl Clear Sticker" /></div>
@@ -433,7 +471,7 @@
         </div>
 
         <!-- Card 2: RELITACK Roll Up Media Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtrumvl.webp"
                         alt="RELITACK Roll Up Media Vinyl P.P Poster Matte Sticker" /></div>
@@ -465,7 +503,7 @@
         </div>
 
         <!-- Card 3: RELITACK Roll Up Media -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtclearl.webp"
                         alt="RELITACK Roll Up Media P.P Laminated Composite Film" /></div>
@@ -485,7 +523,7 @@
         </div>
 
         <!-- Card 4: RELITACK (Printable) -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtps.webp"
                     alt="RELITACK &lpar;Printable&rpar; One Way Vision Sticker" />
@@ -515,7 +553,7 @@
         </div>
 
         <!-- Card 5: RELITACK Window Graphic -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtwgs.webp"
                     alt="RELITACK Window Graphic Frosted Transparent Film" />
@@ -537,7 +575,7 @@
         </div>
 
         <!-- Card 6: RELITACK Magnetic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtmsl.webp"
                         alt="RELITACK Magnetic Sheet Iron Coated Film" /></div>
@@ -565,7 +603,7 @@
         </div>
 
         <!-- Card 7: RELITACK Magnetic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtms2l.webp"
                         alt="RELITACK Magnetic Sheet PVC Magnetic Printable/Adhesive" /></div>
@@ -597,7 +635,7 @@
         </div>
 
         <!-- Card 8: RELITACK Outdoor Solvent -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtos2.webp"
                     alt="RELITACK Outdoor Solvent Poly-Cotton Canvas" />
@@ -627,7 +665,7 @@
         </div>
 
         <!-- Card 9: RELITACK Self Adhesive -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtsa.webp"
                     alt="RELITACK Self Adhesive Holographic Laser Vinyl" />
@@ -645,7 +683,7 @@
         </div>
 
         <!-- Card 10: RELITACK Rainbow PET Adhesive -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtrpa1.webp"
                     alt="RELITACK Rainbow PET Adhesive Magenta Vinyl" />
@@ -663,7 +701,7 @@
         </div>
 
         <!-- Card 11: RELITACK Rainbow PET Adhesive 2 -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtrpa2.webp"
                     alt="RELITACK Rainbow PET Adhesive Cyan Vinyl" />
@@ -681,7 +719,7 @@
         </div>
 
         <!-- Card 12: RELITACK Reflector Colored Honeycomb & Plain Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtyf.webp"
                     alt="RELITACK Reflector Colored Honeycomb & Plain Vinyl Yellow Film" />
@@ -700,7 +738,7 @@
         </div>
 
         <!-- Card 13: RELITACK Reflector Colored Honeycomb & Plain Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtrf.webp"
                     alt="RELITACK Reflector Colored Honeycomb & Plain Vinyl Red Film" />
@@ -719,7 +757,7 @@
         </div>
 
         <!-- Card 14: RELITACK Reflector Colored Honeycomb & Plain Vinyl -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtwf.webp"
                     alt="RELITACK Reflector Colored Honeycomb & Plain Vinyl White Film" />
@@ -738,7 +776,7 @@
         </div>
 
         <!-- Card 15: RELITACK Front-Lit Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtflwl.webp"
                         alt="RELITACK Front-Lit Matte Banner White 40gsm" /></div>
@@ -766,7 +804,7 @@
         </div>
 
         <!-- Card 16: RELITACK Front-Lit Matte -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtflb.webp"
                     alt="RELITACK Front-Lit Matte Banner Black Back 510gsm" />
@@ -788,7 +826,7 @@
         </div>
 
         <!-- Card 17: RELITACK Cold Semi -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtcsl.webp"
                         alt="RELITACK Cold Semi Matte Lamination" /></div>
@@ -824,7 +862,7 @@
         </div>
 
         <!-- Card 18: RELITACK Cold Semi -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtcsl.webp"
                         alt="RELITACK Cold Semi Glossy Lamination" /></div>
@@ -848,7 +886,7 @@
         </div>
 
         <!-- Card 19: RELITACK Graphic -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/rtcsl.webp"
                         alt="RELITACK Graphic Floor Lamination" /></div>
@@ -880,7 +918,7 @@
         </div>
 
         <!-- Card 20: RELITACK Roll Up Stand -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtrus.webp"
                     alt="RELITACK Roll Up Stand Pasting/Clip" />
@@ -906,7 +944,7 @@
         </div>
 
         <!-- Card 20: RELITACK Pop Up Stand -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtpus.webp"
                     alt="RELITACK Pop Up Stand Pasting/Clip" />
@@ -928,7 +966,7 @@
         </div>
 
         <!-- Card 21: RELITACK Mounting Board -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtmbw.webp"
                     alt="RELITACK Mounting Board Forex White Sheet" />
@@ -962,7 +1000,7 @@
         </div>
 
         <!-- Card 22: RELITACK Mounting Board -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtmbb.webp"
                     alt="RELITACK Mounting Board Forex Black Sheet" />
@@ -984,7 +1022,7 @@
         </div>
 
         <!-- Card 23: RELITACK Mounting Board -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtmbw2.webp"
                     alt="RELITACK Mounting Board Plastic White Corrugated Sheet" />
@@ -1006,7 +1044,7 @@
         </div>
 
         <!-- Card 24: RELITACK Mounting Board -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtmbfw.webp"
                     alt="RELITACK Mounting Foam Board White Sheet" />
@@ -1036,7 +1074,7 @@
         </div>
 
         <!-- Card 25: RELITACK Acrylic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtccas.webp"
                     alt="RELITACK Clear Cast Acrylic Sheet" />
@@ -1074,7 +1112,7 @@
         </div>
 
         <!-- Card 26: RELITACK Acrylic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtac.webp"
                     alt="RELITACK Acrylic Sheet Opaque (Milky White)" />
@@ -1096,7 +1134,7 @@
         </div>
 
         <!-- Card 27: RELITACK Acrylic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtac.webp"
                     alt="RELITACK Acrylic Sheet Black High Gloss" />
@@ -1114,7 +1152,7 @@
         </div>
 
         <!-- Card 28: RELITACK Acrylic Sheet -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <img class="product-image" src="Images/Products/Material/Others/rtac.webp"
                     alt="RELITACK Acrylic Sheet Opal &lpar;Light Pass&rpar;" />
@@ -1132,7 +1170,7 @@
         </div>
 
         <!-- Card 29: SOMITAPE Foam Double Sided Tape -->
-        <div class="productCard" data-aos="fade-up">
+        <div class="productCard" style="justify-content: space-between;" data-aos="fade-up">
             <div class="imageProduct">
                 <div class="imgInner1"><img class="product-image" src="Images/Products/Material/Others/sttw.webp"
                         alt="SOMITAPE Foam Double Sided Tape" /></div>
@@ -1173,12 +1211,76 @@
     </div>
 
     <footer>
-        <p>&copy; <b>2025 Inkjet Gobal LLC.</b> | Made By <a target="_blank" href="https://mabeerkhan.com"><b>Abeer
-                    Khan</b></a></p>
+        <div class="footerMainContainer">
+            <div class="footerInner1">
+                <img src="Images/Logos/inkjetGlobalLogoFull.webp" alt="">
+                <p>
+                    <span>Inkjet Global</span> offers top-quality printers, large format printers, printing material,
+                    and spare
+                    parts.
+                    Your trusted partner for professional printing solutions.
+                </p>
+            </div>
+
+            <div class="footerInner2">
+                <div class="footerInner2-1">
+                    <form action="">
+                        <input type="email" name="emailForSubscription" id="emailForSubscription"
+                            placeholder="Subscribe To Our Newsletter">
+                        <button type="reset" onclick="alert('Thanks For Subscribing!')">Subscribe Now!</button>
+                    </form>
+                </div>
+
+                <div class="footerInner2-2">
+                    <div class="footerLinkLists">
+                        <h3>Products</h3>
+                        <a href="uv.html" class="footerLink">UV <small>(DTF)</small> Printers</a>
+                        <a href="dtf.html" class="footerLink">Textile DTF Printers</a>
+                        <a href="ecosolvent.html" class="footerLink">Eco Solvent Printer</a>
+                        <a href="sublimation.html" class="footerLink">Sublimation Printer</a>
+                        <a href="laser.html" class="footerLink">Laser Machines</a>
+                        <a href="plotter.html" class="footerLink">Plotter & Cutting Machines</a>
+                        <a href="heattransfer.html" class="footerLink">Heat Transfer Machines</a>
+                        <a href="inks.html" class="footerLink">Inks</a>
+                        <a href="material.html" class="footerLink">Prinitng Material</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Useful Links</h3>
+                        <a href="index.html" class="footerLink">Home</a>
+                        <a href="contact.html" class="footerLink">Contact Us</a>
+                        <a href="application.html" class="footerLink">Application</a>
+                        <a href="contact.html#Apply-For-A-Job" class="footerLink">Apply For Job</a>
+                        <a href="sitemap.xml" class="footerLink" target="_blank">Sitemap</a>
+                    </div>
+
+                    <div class="footerLinkLists">
+                        <h3>Parts & Services</h3>
+                        <a href="techsupport.html" class="footerLink">Technical Support</a>
+                        <a href="training.html" class="footerLink">Training</a>
+                        <a href="parts.html" class="footerLink">Spare Parts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footerDisclamer">
+            <p><i class="fa-regular fa-copyright"></i> 2025 <span>Inkjet Global</span> | All Rights Reserved</p>
+
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span style="font-family: 'Gorga Regular';">&lpar;based on 17 reviews&rpar;</span>
+            </div>
+        </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="Dependencies/js/aos.js"></script>
     <script src="loader.js"></script>
     <script src="script.js"></script>
 </body>

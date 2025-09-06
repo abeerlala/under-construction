@@ -27,8 +27,13 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- DEPENDENCIES -->
+    <link rel="stylesheet" href="Dependencies/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/brands.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/solid.min.css" />
+    <link rel="stylesheet" href="Dependencies/css/regular.min.css" />
+
+    <link rel="stylesheet" href="Dependencies/css/aos.css" />
 </head>
 
 <body>
@@ -38,14 +43,48 @@
         </div>
     </div>
 
-    <a id="toTop"><i class="fa-solid fa-arrow-up"></i></a>
-    <a id="toCall" href="tel:+971504217267"><i class="fa-solid fa-phone"></i></a>
-    <a id="toWhatsapp" href="https://wa.me/+971504217267" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="sideIcons">
+        <a id="toTop" aria-label="Go To Top"><i style="font-size: 1.2rem;" class="fa-solid fa-arrow-up"></i></a>
+
+        <a aria-label="Call Us" href="tel:+971504217267"><i style="font-size: 1.2rem;"
+                class="fa-solid fa-phone"></i></a>
+
+        <a aria-label="Expand Social Icons" title="Expand Social Icons" id="openSocials" class="openSocials"
+            onclick="openSocialsFn()"><i id="openSocialsIcon" class="fa-solid fa-angle-up"></i></a>
+
+        <a style="background-color: #25d366;" aria-label="Talk To Us On Whatsapp" href="https://wa.me/+971504217267"
+            target="_blank"><i style="font-size: 1.4rem;" class="fa-brands fa-whatsapp"></i></a>
+
+        <div class="sideIconsInner">
+            <a aria-label="Visit Inkjet Global Facebook Page" href="https://www.facebook.com/share/1FHeWxCKLt/"
+                target="_blank" style="background-color: #4267B2;">
+                <i style="font-size: 1.4rem;" class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Instagram"
+                href="https://www.instagram.com/inkjetglobal?igsh=enB1NmFqcGo0NjFy" target="_blank"
+                style="background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);">
+                <i style="font-size: 1.5rem;" class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Tiktok"
+                href="https://www.tiktok.com/@inkjet.global.by?_t=ZS-8zMi0zAPcY8&_r=1" target="_blank"
+                style="background-color: #000000;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a aria-label="Visit Inkjet Global Linked In"
+                href="https://www.linkedin.com/in/inkjet-global-by-reliance-b19211382" target="_blank"
+                style="background-color: #0077B5;">
+                <i style="font-size: 1.3rem;" class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </div>
+
     <nav id="nav"></nav>
     <div class="search2" id="searchcontainer"></div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="Dependencies/js/aos.js"></script>
     <script src="loader.js"></script>
     <script src="script.js"></script>
 </body>

@@ -1,6 +1,6 @@
 // Load Navigation Bar On All Pages
 
-fetch("/Components/nav.html")
+fetch("/Dependencies/nav.html")
     .then(res => res.text())
     .then(data => { document.getElementById("nav").innerHTML = data; })
     .then(() => {
@@ -113,7 +113,7 @@ fetch("/Components/nav.html")
 
 // Load Search Bar For Mobile 
 
-fetch("/Components/search2.html")
+fetch("/Dependencies/search2.html")
     .then(res => res.text())
     .then(data => { document.getElementById("searchcontainer").innerHTML = data; })
     .then(() => {

@@ -20,6 +20,7 @@
     font-family: 'Gorga';
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
+    /* font-display: swap; */
 }
 
 :root {
@@ -33,7 +34,7 @@
 
 body {
     background-color: var(--2);
-    min-width: 320px;
+    min-width: 300px;
 }
 
 ::-webkit-scrollbar {
@@ -106,42 +107,85 @@ body {
 
 /* Side Icons */
 
-#toTop,
-#toWhatsapp,
-#toCall {
-    position: fixed;
-    bottom: 105px;
-    right: 10px;
-    background-color: var(--5);
-    color: var(--4);
+.openSocials {
+    position: relative;
+    cursor: pointer;
+}
+
+.openSocials::after {
+    content: "Expand Social Media Icons";
+    background-color: var(--3);
+    border: 2px solid var(--2);
+    padding: 5px 10px;
+    position: absolute;
+    left: -242px;
     border-radius: 2px;
+    rotate: 10deg;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.42,0,.44,1.68);
+    padding-top: 7px;
+    pointer-events: none;
+}
+
+.changeAfter::after {
+    content: "Contract Social Media Icons";
+}
+
+.openSocials:hover::after {
+    opacity: 1;
+    rotate: 0deg;
+    transform: translateY(0);
+}
+
+.sideIcons {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sideIconsInner {
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.sideIcons a {
     height: 35px;
     width: 35px;
-    display: none;
-    place-items: center;
+    background-color: var(--5);
+    color: var(--4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    cursor: pointer;
-    transition: transform .3s ease, opacity .3s ease;
-    z-index: 999;
+    border-radius: 2px;
+    transition: transform .4s ease;
 }
 
-#toCall {
-    bottom: 60px;
-    display: grid;
-    font-size: 1rem;
-}
-
-#toWhatsapp {
-    bottom: 15px;
-    display: grid;
-    background-color: #25D366;
-    font-size: 1.2rem;
-}
-
-#toTop:hover,
-#toWhatsapp:hover,
-#toCall:hover {
+.sideIcons a:hover,
+.sideIcons #toTop.activetopBtn:hover {
     transform: translateY(-5px);
+}
+
+.sideIcons #toTop {
+    opacity: 0;
+    transition: opacity .4s ease, transform .4s ease;
+    transform: translateY(10px);
+    cursor: pointer;
+}
+
+#toTop.activetopBtn {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Nav */
@@ -553,19 +597,166 @@ input[type="checkbox"] {
 /* Footer Styling */
 
 footer {
-    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--4);
-    bottom: 0;
+}
+
+.footerMainContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    height: 100%;
+    gap: 50px;
+}
+
+.footerInner1 {
+    width: 25%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerInner1 img {
+    width: 100%;
+    height: 50%;
+}
+
+.footerInner1 p span {
+    font-family: "Gorga Regular";
+}
+
+.footerInner2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.footerInner2-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.footerInner2-1 input {
+    height: 40px;
+    width: 500px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    background-color: transparent;
+    border: 2px solid var(--5);
+    color: var(--5);
+    padding: 13px 170px 10px 10px;
+    font-size: 1.05rem;
+    transition: all .3s ease;
+    caret-color: var(--3);
+}
+
+.footerInner2-1 button {
+    position: absolute;
+    right: 0;
+    height: 40px;
+    background-color: var(--5);
+    color: var(--4);
+    font-size: 1.1rem;
+    width: 170px;
+    outline: none;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .3s ease;
+    padding-top: 4px;
+}
+
+.footerInner2-1:hover input,
+.footerInner2-1 input:focus  {
+    border-color: var(--3);
+}
+
+.footerInner2-1:hover button,
+.footerInner2-1 input:focus + button {
+    background-color: var(--3);
+}
+
+.footerInner2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.footerLinkLists {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footerLink {
+    text-decoration: none;
+    color: var(--5);
+    transition: color .3s ease, transform .3s ease;
+}
+
+.footerLink:hover {
+    color: var(--3);
+    transform: translateX(5px);
+}
+
+.footerDisclamer {
+    width: 100%;
+    margin-bottom: 15px;
     text-align: center;
-    padding: 20px 50px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-footer p {
-    color: var(--5);
+.footerDisclamer p,
+.footerDisclamer .rating{
+    margin: 0px 50px;
 }
 
-footer a {
-    color: var(--5);
+.footerDisclamer p,
+.footerLinkLists h3 {
+    font-family: "Gorga Regular";
+}
+
+.footerDisclamer p span {
+    font-family: "Gorga Regular";
+    color: var(--3);
+}
+
+hr {
+    margin: 20px 0;
+    width: 90%;
+}
+
+.footerDisclamer .rating .fa-star {
+    color: var(--3);
+}
+
+.footerDisclamer .rating .fa-star:nth-child(5) {
+    color: #23232370;
+}
+
+.rating span:last-child {
+    font-size: .9rem;
 }
 
 /* Home Page Styling */
@@ -942,7 +1133,7 @@ a.viewAll:hover {
     height: 100%;
     width: 100%;
     background-color: transparent;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px) brightness(34%);
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -1145,6 +1336,7 @@ optgroup {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    scroll-margin-top: 200px;
 }
 
 .specialCard {
@@ -1158,6 +1350,7 @@ optgroup {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    scroll-margin-top: 140px;
 }
 
 .product-detailsspecial {
@@ -1452,7 +1645,7 @@ table td:first-child {
     text-align: left;
     width: 90%;
     max-width: 900px;
-    margin: 0px 10px 70px 10px;
+    margin: 0px 10px 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1496,6 +1689,90 @@ table td:first-child {
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+/* Career */
+
+.careerTitle {
+    margin: 0px 0 10px 0;
+    text-align: center;
+    font-size: 1.9rem;
+}
+
+.careerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.careerContainer form {
+    margin: 0 20px;
+    min-width: 300px;
+    width: 600px;
+    background-color: var(--4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.careerContainer form .formGroup {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formGroup input,
+.formGroup textarea {
+    height: 35px;
+    width: 100%;
+    padding: 5px 0 0 7px;
+    outline: none;
+    border: 1px solid var(--6);
+    font-size: .9rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    border-color: var(--3);
+}
+
+.formGroup textarea {
+    height: 120px;
+    max-height: 180px;
+    resize: vertical;
+    padding-top: 10px;
+}
+
+.formGroup label {
+    font-weight: bold;
+}
+
+.careerContainer form button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--3);
+    color: var(--4);
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.careerContainer form button:hover {
+    /* background-color: var(--6); */
+    /* color: var(--5); */
+    box-shadow: 1.5px 1px 0px 1px #000;
 }
 
 /* Technical Support */

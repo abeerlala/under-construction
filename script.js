@@ -1,4 +1,4 @@
-window.addEventListener("load", ()=>{
+window.addEventListener("load", () => {
     document.querySelector(".loader").style.display = "none";
 })
 
@@ -7,14 +7,37 @@ AOS.init();
 // ToTop Logic
 
 const toTop = document.querySelector("#toTop");
+
+scrollY > 300 ? toTop.classList.add("activetopBtn") : toTop.classList.remove("activetopBtn");
 document.addEventListener("scroll", () => {
-    scrollY > 300 ? toTop.style.display = "grid" : toTop.style.display = "none";
+    scrollY > 300 ? toTop.classList.add("activetopBtn") : toTop.classList.remove("activetopBtn");
 });
 
 toTop.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+const openSocialsIcon = document.querySelector("#openSocialsIcon");
+const socialInner = document.querySelector(".sideIconsInner");
+
+const openSocialsFn = () => {
+    if (openSocialsIcon.classList == "fa-solid fa-angle-up") {
+        socialInner.style.height = "auto";
+        socialInner.style.overflow = "visible";
+        openSocialsIcon.classList.remove("fa-angle-up")
+        openSocialsIcon.classList.add("fa-angle-down")
+        openSocialsIcon.parentElement.classList.add("changeAfter")
+        openSocialsIcon.parentElement.title = "Contract Social Media Icons";
+    } else {
+        socialInner.style.height = "0";
+        socialInner.style.overflow = "hidden";
+        openSocialsIcon.classList.remove("fa-angle-down")
+        openSocialsIcon.classList.add("fa-angle-up")
+        openSocialsIcon.parentElement.classList.remove("changeAfter")
+        openSocialsIcon.parentElement.title = "Expand Social Media Icons";
+    }
+};
 
 // Home Page Slide's Logic
 
